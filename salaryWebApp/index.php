@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Salary Web App</title>
+		<title>:: Salary Web App ::</title>
 </head>
 <body>
 	<form action="index.php" method="POST">

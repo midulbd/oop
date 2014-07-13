@@ -11,7 +11,6 @@
 		{
 			$rent = $this->basic_amount * ($this->house_rent_rate/100);
 			$medical = $this->basic_amount * ($this->medical_allowance_rate/100);
-
 			$total_salary = $this->basic_amount + ($rent+$medical);
 
 			return $total_salary;
