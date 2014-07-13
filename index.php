@@ -19,8 +19,11 @@
 			$an_employee->id = $_GET['idText']; //$_POST or $_GET has the value in dictionary(Key-value pair) format
 			$an_employee->name = $_GET['nameText'];
 			$an_employee->salary = $_GET['salaryText'];
+			$salary_with_bonus = $an_employee->salary + 5000;
 
-			echo $an_employee->id.' '.$an_employee->name.' '.$an_employee->salary;	
+			echo $an_employee->id.' '.$an_employee->name.' '.$an_employee->salary;
+			echo "<br/>";
+			echo "Salary with bonus: ".$salary_with_bonus;	
 		}
 
 	?>
