@@ -16,6 +16,7 @@
 
 		<input type="submit" name="calculateButton" value="Calculate">
 	</form>
+	
 	<?php
 		require_once 'interestcalculator.php';
 		if(isset($_GET['calculateButton'])){
