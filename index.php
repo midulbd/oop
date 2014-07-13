@@ -2,17 +2,18 @@
 <html>
 	<head>
 		<title>User Input Form</title>
-</head>
-<body>
-	<form action="index.php" method="GET">
-		<input type="text" name="idText"><br/>
-		<input type="text" name="nameText"><br/>
-		<input type="text" name="salaryText"><br/>
-		<input type="submit" name="submitButton" value="Submit">
-	</form>
-	<?php
-		require_once 'officeemployee.php';
-		if(isset($_GET['submitButton'])){
+	</head>
+	<body>
+		<form action="index.php" method="GET">
+			<input type="text" name="idText"><br/>
+			<input type="text" name="nameText"><br/>
+			<input type="text" name="salaryText"><br/>
+			<input type="submit" name="submitButton" value="Submit">
+		</form>
+		
+		<?php
+			require_once 'officeemployee.php';
+			if(isset($_GET['submitButton'])){
 
 			$an_employee = new OfficeEmployee();
 
@@ -26,6 +27,6 @@
 			echo "Salary with bonus: ".$salary_with_bonus;	
 		}
 
-	?>
+		?>
 </body>
 </html>

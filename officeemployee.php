@@ -10,14 +10,23 @@
 
 		public function get_salary_with_bonus()
 		{
-			if($this->salary<=10000){
-				return $this->salary+=$this->salary*0.5;
+			if($this->salary <= 10000){
+				$bonus = $this->salary * 0.5;
+				$total_salary = $bonus + $this->salary;
+
+				return $total_salary;
 			}
-			elseif ($this->salary>10000 && $salary<=30000) {
-				return $this->salary+=$this->salary*0.3;
+			elseif ($this->salary>10000 && $this->salary<=30000) {
+				$bonus = $this->salary * 0.3;
+				$total_salary = $bonus + $this->salary;
+
+				return $total_salary;
 			}
 			elseif ($this->salary>30000) {
-				return $this->salary+=$this->salary*0.2;
+				$bonus = $this->salary * 0.2;
+				$total_salary = $bonus + $this->salary;
+
+				return $total_salary;
 			}
 			else{
 				return "Invalid salary!";
